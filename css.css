@@ -1,0 +1,26 @@
+/* stylesheet */
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+
+
+}
+
+
+.grid { 
+    border: 1px solid red;
+    height: 16px;
+    width: 16px;
+}
+
+.grid:hover {
+}
