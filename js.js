@@ -8,12 +8,26 @@ for (let i = 0; i < 256; i++) {
 
 }
 
-const hoverEffect = containerBtn.querySelectorAll('div.grid')
-hoverEffect.addEventListener('click', () => {
-    prompt('hi')
+// const hoverEffect = containerBtn.querySelectorAll('div.grid')
+// console.log(hoverEffect)
 
+// Works only for the first '.grid' element or 'block'
+// Selecting '.grid' or '.container > .grid' makes no difference
+// Using just '.container' will make all the child element black
+// Tried multiple eventListeners. They only select the first block.
+
+const mouseOver = document.querySelector('.grid')
+
+mouseOver.addEventListener('mouseenter', () => {
+    mouseOver.setAttribute('style', 'background-color: black')
 })
-console.log(hoverEffect)
+
+mouseOver.addEventListener('mouseleave', () => {
+    mouseOver.removeAttribute('style')
+})
+
+
+
 
 
 
