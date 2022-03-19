@@ -10,8 +10,8 @@ display: flex;
 flex-wrap: wrap;
 background-color: white;
 border: 1px solid black;
-width: auto;
-
+height: 500px;
+width: 500px;
 
 
 
@@ -21,9 +21,7 @@ div {
 
     background-color: black;
     border: 1px solid aqua;
-    height: 50px;
-    width: 50px;
-
+    flex: 1 1 31.25px;
 }
 
 
@@ -35,13 +33,12 @@ div {
  
 } */
 
-/* .grid {
-    border: 1px solid red;
-    height: 16px;
-    width: 16px;
-  
+.grid {
+    /* border: 1px solid aqua; */
+    background-color: orange;
+    /* flex: 1 1 31.25px;  */
 
-} */
+}
 
 
 
