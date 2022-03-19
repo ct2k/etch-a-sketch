@@ -6,19 +6,49 @@ body {
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 300px;
+display: flex;
+flex-wrap: wrap;
+background-color: white;
+border: 1px solid black;
+width: auto;
+
+
 
 
 }
 
+div {
 
-.grid { 
+    background-color: black;
+    border: 1px solid aqua;
+    height: 50px;
+    width: 50px;
+
+}
+
+
+/* .create { 
+    border: 1px solid red;
+    height: 20px;
+    width: 20px;
+
+ 
+} */
+
+/* .grid {
     border: 1px solid red;
     height: 16px;
     width: 16px;
+  
+
+} */
+
+
+
+.grid2 { 
+    border: 1px solid green;
+    height: 16px;
+    width: 16px;
 }
+
 
