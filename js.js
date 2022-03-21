@@ -25,11 +25,12 @@ for (let i = 0; i < num1; i++) {
     for (let j = 0; j < num2; j++) {
 
     const createGrid = document.createElement('div')
-    // createGrid.classList.add('grid')
+    createGrid.classList.add('grid')
     containerBtn.appendChild(createGrid)
    
             
         }
+
 
 }
 
@@ -38,12 +39,61 @@ for (let i = 0; i < num1; i++) {
 
 createAGrid(16, 16)
 
+// function createAGrid(num1, num2) {
+
+// for (let i = 0; i < num1; i++) {
+//     const createGrid = document.createElement('div')
+//     createGrid.textContent = 'crap'
+//     createGrid.classList.add('grid')
+//     containerBtn.appendChild(createGrid)
+
+// }
+//     for (let j = 0; j < num2; j++) {
+
+//     const createRow = document.createElement('div')
+//     createRow.textContent = 'crap'
+//     createRow.classList.add('row')
+//     containerBtn.appendChild(createRow)
+   
+            
+        
+
+
+// }
+
+// }
+
+
+// createAGrid(16, 16)
+
+// function createAGrid(num1) {
+
+// for (let i = 0; i < num1; i++) {
+//     const createGrid = document.createElement('div')
+//     createGrid.textContent = 'crap'
+//     createGrid.classList.add('grid')
+//     containerBtn.appendChild(createGrid)
+
+// }
+
+   
+            
+        
+
+
+// }
+
+
+// createAGrid(16)
+
+
+
 
 // Create the Hover trailing effect
 // hoverEffect can = document or containerBtn, doesn't matter.
 // querySelectorAll can = .grid or .container > grid, doesn't matter.
 
-const hoverEffect = document.querySelectorAll('div')
+const hoverEffect = document.querySelectorAll('.grid')
 
 console.log(hoverEffect)
 

@@ -1,28 +1,88 @@
 /* stylesheet */
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
+    padding: 0;
 }
 
 .container {
-display: flex;
-flex-wrap: wrap;
-background-color: white;
-border: 1px solid black;
-height: 500px;
-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(16, 20px);
+    /* grid-template-rows: 50px; */
+    grid-auto-rows: 20px;
+    justify-content: center;
+    /* align-content: center; */
+    /* height: 200px; */
+    /* grid-template-areas: 'header header' 'sidebar content'; */
 
 
 
 }
 
-div {
 
-    background-color: black;
+/* .box {
+    background-color: blue;
+    border-color: green;
+    height: 50px;
+    width: 50px;
+} */
+
+
+
+.grid {
+    background-color: peachpuff;
+    border: 1px solid red;
+    /* grid-column: span 1; */
+    /* grid-area: header; */
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+}
+
+/* .row {
+    background-color: blueviolet;
     border: 1px solid aqua;
-    flex: 1 1 31.25px;
-}
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container > div {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+    
+    /* background-color: black;
+    border: 1px solid red;
+    flex: 1  19.53px; */
+    /* height: 50px; */
+    /* width: 50px; */
+    /* height: 50%;
+
+/* .container > div:before {
+    content: '';
+    float: left;
+    padding-top: 100%;
+    display: table;
+} */
+
+/* .test {
+
+    
+    border: 1px solid black;
+    background-color: aqua;
+} */
 
 
 /* .create { 
@@ -33,19 +93,28 @@ div {
  
 } */
 
-.grid {
-    /* border: 1px solid aqua; */
-    background-color: orange;
-    /* flex: 1 1 31.25px;  */
+/* .grid {
+    border: 1px solid aqua;
+    background-color: blueviolet;
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-height: 31.25px;
+    min-height: 31.25px;
 
-}
+    
+} */
+
+/* .grid-item {
+    height: 50px;
+    width: 50px;
+} */
 
 
 
-.grid2 { 
+/* .grid2 { 
     border: 1px solid green;
     height: 16px;
     width: 16px;
-}
+} */
 
 
