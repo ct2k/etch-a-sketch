@@ -21,13 +21,13 @@ const containerBtn = document.querySelector('.container')
 
 
 
-function createAGrid(num1, num2, num3) {
+function createAGrid(num1, num2) {
 
 for (let i = 0; i < num1; i++) {
     for (let j = 0; j < num2; j++) {
 
     const createGrid = document.createElement('div')
-    containerBtn.setAttribute('style', `${'grid-template-columns'}: ${'repeat(16, 20px)'}`)
+    // containerBtn.setAttribute('style', `${'grid-template-columns'}: ${'repeat(16, 20px)'}`)
     // createGrid.setAttribute('style', `${'background-color'}: pink`)
     // createGrid.style.gridTemplateColumns = 'repeat(16, 20px)'
     // createGrid.style.backgroundColor = 'green'
@@ -64,8 +64,10 @@ const createNew = document.querySelector('#createnew')
 
 createNew.addEventListener('click', () => {
     let userInput = prompt('enter grid size')
-    if (userInput === '32') {
-        createAGrid(userInput, userInput)
+    if (userInput === '32' || userInput === '16' || userInput === '2') {
+        containerBtn.style.gridTemplateColumns = `repeat(${userInput}, 20px`
+         createAGrid(userInput, userInput)
+
 
     }
 
