@@ -21,7 +21,7 @@ const containerBtn = document.querySelector('.container')
 
 
 
-function createAGrid(num1, num2) {
+function createAGrid(num1, num2, callback) {
 
 for (let i = 0; i < num1; i++) {
     for (let j = 0; j < num2; j++) {
@@ -39,6 +39,18 @@ for (let i = 0; i < num1; i++) {
         }
 
 
+}
+
+const hoverEffect = document.querySelectorAll('.grid')
+
+console.log(hoverEffect)
+
+for (let i = 0; i < hoverEffect.length; i++) {
+    hoverEffect[i].addEventListener('mouseover', () => {
+        // hoverEffect[i].classList.add('grid')
+        hoverEffect[i].setAttribute('style', 'background-color: orange')
+
+    })
 }
 
 }
@@ -127,17 +139,17 @@ createNew.addEventListener('click', () => {
 // hoverEffect can = document or containerBtn, doesn't matter.
 // querySelectorAll can = .grid or .container > grid, doesn't matter.
 
-const hoverEffect = document.querySelectorAll('.grid')
+// const hoverEffect = document.querySelectorAll('.grid')
 
-console.log(hoverEffect)
+// console.log(hoverEffect)
 
-for (let i = 0; i < hoverEffect.length; i++) {
-    hoverEffect[i].addEventListener('mouseover', () => {
-        // hoverEffect[i].classList.add('grid')
-        hoverEffect[i].setAttribute('style', 'background-color: orange')
+// for (let i = 0; i < hoverEffect.length; i++) {
+//     hoverEffect[i].addEventListener('mouseover', () => {
+//         // hoverEffect[i].classList.add('grid')
+//         hoverEffect[i].setAttribute('style', 'background-color: orange')
 
-    })
-}
+//     })
+// }
 
 // Clear the grid
 
@@ -154,13 +166,25 @@ clearBtn.addEventListener('click', () => {
     
     //     }
     // }
-    for (let i = 0; i < hoverEffect.length; i++) {
-        hoverEffect[i].removeAttribute('style')
+    for (let i = 0; i < targetSquares.length; i++) {
+        targetSquares[i].removeAttribute('style')
         
     }
    
 
 })
+
+// clearBtn.addEventListener('click', clearGrid)
+
+// function clearGrid(callback) {
+
+//     for (let i = 0; i < hoverEffect.length; i++) {
+//         hoverEffect[i].removeAttribute('style')
+//         createAGrid(callback)
+
+//     }
+
+// }
 
 
 
