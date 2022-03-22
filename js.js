@@ -19,12 +19,19 @@ const containerBtn = document.querySelector('.container')
 
 // }
 
-function createAGrid(num1, num2) {
+
+
+function createAGrid(num1, num2, num3) {
 
 for (let i = 0; i < num1; i++) {
     for (let j = 0; j < num2; j++) {
 
     const createGrid = document.createElement('div')
+    containerBtn.setAttribute('style', `${'grid-template-columns'}: ${'repeat(16, 20px)'}`)
+    // createGrid.setAttribute('style', `${'background-color'}: pink`)
+    // createGrid.style.gridTemplateColumns = 'repeat(16, 20px)'
+    // createGrid.style.backgroundColor = 'green'
+    // createGrid.style.width = '500px'
     createGrid.classList.add('grid')
     containerBtn.appendChild(createGrid)
    
@@ -36,8 +43,33 @@ for (let i = 0; i < num1; i++) {
 
 }
 
-
 createAGrid(16, 16)
+
+// const createBtn = document.querySelector('#createbtn')
+
+// createBtn.addEventListener('click', () => {
+//     createAGrid(16,16)
+// })
+
+const destroyBtn = document.querySelector('#destroybtn')
+const targetSquares = document.querySelectorAll('.grid')
+
+destroyBtn.addEventListener('click', () => {
+    for (let i = 0; i < targetSquares.length; i++) {
+        containerBtn.removeChild(targetSquares[i])
+    }
+})
+
+const createNew = document.querySelector('#createnew')
+
+createNew.addEventListener('click', () => {
+    let userInput = prompt('enter grid size')
+    if (userInput === '32') {
+        createAGrid(userInput, userInput)
+
+    }
+
+})
 
 // function createAGrid(num1, num2) {
 
