@@ -26,12 +26,40 @@ for (let i = 0; i < num1; i++) {
 const hoverEffect = document.querySelectorAll('.grid')
 // console.log(hoverEffect)
 
+// for (let i = 0; i < hoverEffect.length; i++) {
+//     hoverEffect[i].addEventListener('mouseover', () => {
+//         hoverEffect[i].setAttribute('style', 'background-color: orange')
+
+//     })
+// }
+
+// RGB hover effect
+
 for (let i = 0; i < hoverEffect.length; i++) {
     hoverEffect[i].addEventListener('mouseover', () => {
-        hoverEffect[i].setAttribute('style', 'background-color: orange')
+        const colourStyle = [
+            `${hoverEffect[i].style.backgroundColor = 'red'}`,
+            `${hoverEffect[i].style.backgroundColor = 'green'}`,
+            `${hoverEffect[i].style.backgroundColor = 'blue'}`,
+            `${hoverEffect[i].style.backgroundColor = 'pink'}`,
+            ]
+        
+    // hoverEffect[i].setAttribute('style', 'background-color: red')
+    // hoverEffect[i].setAttribute('style', 'background-color: green')
+    // hoverEffect[i].setAttribute('style', 'background-color: blue')
+    // hoverEffect[i].setAttribute('style', 'background-color: pink')
+    // hoverEffect[i][Math.floor(Math.random()* hoverEffect.length)]
+    hoverEffect[i].style.backgroundColor = colourStyle[Math.floor(Math.random()* colourStyle.length)]
 
-    })
+    // console.log(hoverEffect[i])
+    // hoverEffect[i][Math.floor(Math.random()* `${hoverEffect[i].style.backgroundColor = '#000001'}`)]
+
+})
+
 }
+
+
+
 
 // Clear the grid
 
@@ -71,9 +99,43 @@ function userCreatedGrid() {
 
 }
 
+const colours = document.querySelector('#createcolours')
+
+colours.addEventListener('click', myFunc)
+
+function myFunc() {
+    const randomColours = [`${colours.style.backgroundColor = 'red'}`, `${colours.style.backgroundColor = 'green'}`]
+    // for (let i = 0; i < randomColours.length; i++) {
+        colours.style.backgroundColor = randomColours[Math.floor(Math.random() * randomColours.length)]
+        // console.log(randomColours[i])
+
+    
+}
 
 
+//  math random practice
 
+const create = document.querySelector('#createbtn')
+const myArray = ['bob', 'jim', 'sam']
+// const myObject = [{name: 'ali, sam, joe, franklin', food: 'bacon', hungry: 'yes'}]
+// console.log(myArray)
+// console.log(Object.keys(myObject).length)
+
+
+create.addEventListener('click', () => {
+    console.log(create.textContent = myArray[Math.floor(Math.random() * myArray.length)])
+    // console.log(create.textContent = myObject[(Math.floor(Math.random() * Object.keys(myObject).length))])
+
+})
+
+// const myStuff = ['Rock', 'Paper', 'Scissors'];
+
+// function computerPlay() {
+//     console.log(myStuff[Math.floor(Math.random() * myStuff.length)]);
+
+// }
+
+// computerPlay()
 
 // Unused code for reference & comparison
 
