@@ -18,101 +18,60 @@ body {
 
 }
 
-
-/* .box {
-    background-color: blue;
-    border-color: green;
-    height: 50px;
-    width: 50px;
-} */
-
-
-
 .grid {
-    background-color: peachpuff;
-    border: 1px solid red;
-    /* grid-column: span 1; */
-    /* grid-area: header; */
-    /* grid-column-start: 1;
-    grid-column-end: 3; */
-
+    background-color: whitesmoke;
+    border: 1px solid black;
 }
 
-/* .row {
-    background-color: blueviolet;
-    border: 1px solid aqua;
-}  */
+.first {
+    opacity: 0.1;
+    background-color: orange; 
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;    
+ }
 
+.second {
+    opacity: 0.2;
+    background-color: orange;
+}   
 
+.third {
+    opacity: 0.3;
+    background-color: orange;
+}
 
+.fourth {
+    opacity: 0.4;
+    background-color: orange;
+}
 
+.fifth {
+    opacity: 0.5;
+    background-color: orange;;
+}
 
+.sixth {
+    opacity: 0.6;
+    background-color: orange;;
+}
 
+.seventh {
+    opacity: 0.7;
+    background-color: orange;;
+}
 
+.eighth {
+    opacity: 0.8;
+    background-color: orange;;
+}
 
+.nineth {
+    opacity: 0.9;
+    background-color: orange;;
+}
 
-
-
-
-
-/* .container > div {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* align-items: flex-start; */
-    /* justify-content: center; */
-    
-    /* background-color: black;
-    border: 1px solid red;
-    flex: 1  19.53px; */
-    /* height: 50px; */
-    /* width: 50px; */
-    /* height: 50%;
-
-/* .container > div:before {
-    content: '';
-    float: left;
-    padding-top: 100%;
-    display: table;
-} */
-
-/* .test {
-
-    
-    border: 1px solid black;
-    background-color: aqua;
-} */
-
-
-/* .create { 
-    border: 1px solid red;
-    height: 20px;
-    width: 20px;
-
- 
-} */
-
-/* .grid {
-    border: 1px solid aqua;
-    background-color: blueviolet;
-    flex-grow: 1;
-    flex-shrink: 0;
-    min-height: 31.25px;
-    min-height: 31.25px;
-
-    
-} */
-
-/* .grid-item {
-    height: 50px;
-    width: 50px;
-} */
-
-
-
-/* .grid2 { 
-    border: 1px solid green;
-    height: 16px;
-    width: 16px;
-} */
-
-
+.tenth {
+    opacity: 1;
+    background-color: orange;;
+}
